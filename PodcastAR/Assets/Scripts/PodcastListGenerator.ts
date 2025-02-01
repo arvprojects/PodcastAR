@@ -13,22 +13,22 @@ global.userContextSystem.requestUsername(function(username){
   print(username)
 })
 
-
-    declare global {
-    var currentPodcastId: number;
-    }
-
-
-
-//fetch podcast lists this would actually be a dictionary of name to id
-
-let podcasts = new Map<string, string>();
+//hardcod podcast list, using api made the scroll view not work
+let podcasts = new Map<string, string>([
+    ["Short History of Chichen Itza", "0c36ba29-4da2-475a-ad0b-e88f04cba59e"],
+    ["The Weekly Show with Jon Stewart - Reflecting on 2024 with Mark Cuban", "1ef68c47-a575-47cb-84ce-ef51a10e0030"],
+    ["Morning Brew Daily Jan 7th", "45ed0d09-ab9f-471d-8772-cae422f9151c"],
+    ["99% Invisible - Meet me at Riis", "a0fef1fc-8f2d-4590-826b-e60f54d52b8b"],
+    ["Morning Brew Daily Jan 29th", "c6f40c75-4bb5-4b8e-a995-a0734c29e4bf"],
+    ["Morning Brew Daily Jan 31st", "f0cde348-6184-4d11-91b7-2a343aada57c"]
+]);
 
 
 @component
 export class GridContentCreator extends BaseScriptComponent {
   @input
-  itemPrefab!: ObjectPrefab
+  itemPrefab!: ObjectPrefab 
+    
 
   @input
   containerFrame:ScriptComponent;
@@ -44,7 +44,8 @@ export class GridContentCreator extends BaseScriptComponent {
     private spotifyMenuContainer;
 
  
-     async onAwake():   Promise<void> {
+      async onAwake():   Promise<void> {
+        
      //   this.spectaclesBackendClient = new SpectaclesBackendClient()
         this.specs = this.scr.getComponent(
       SpectaclesBackendClient.getTypeName()
@@ -52,18 +53,18 @@ export class GridContentCreator extends BaseScriptComponent {
 
     this.spotifyMenuContainer = this.spotifyMenu.sceneObject.getComponent(ContainerFrame.getTypeName());
 
-    let podcastList = await this.specs.getPodcasts()
+//    let podcastList = await this.specs.getPodcasts()
 
+//    podcastList.forEach(podcast => {
+
+//      podcasts.set(podcast['name'], podcast['id']);
+//    });
   
-    podcastList.forEach(podcast => {
+
+    const yStart = -7
+    const yOffset = -6.4
       
-      podcasts.set(podcast['name'], podcast['id']);
-    });
-  
-
-    const yStart = -10
-    const yOffset = -6.5
-      let i =0;
+    let i =0;
     for (const podcast of podcasts.keys()) {
       const item = this.itemPrefab.instantiate(this.getSceneObject())
       let text=item.getChild(0).getComponent('Text')
@@ -74,7 +75,7 @@ export class GridContentCreator extends BaseScriptComponent {
       
       button.onButtonPinched.add(() => this.onStateChangedCallback(podcast));
       const screenTransform = item.getComponent("Component.ScreenTransform")
-      screenTransform.offsets.setCenter(new vec2(15, yStart + yOffset * i))
+      screenTransform.offsets.setCenter(new vec2(10, yStart + yOffset * i))
       item.enabled = true
       i++;
     }
@@ -101,3 +102,6 @@ export class GridContentCreator extends BaseScriptComponent {
 
   };
 }
+
+
+

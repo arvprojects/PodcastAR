@@ -8403,7 +8403,6 @@
     {}
   ScriptInputs:
     "":
-      rocketConfigurator: !<MappingBased.RocketConfigurator> ce2fde66-cadc-4d86-97a4-9c45b257d536
       objectPrefabs: !<reference.ObjectPrefab[]>
         - !<reference> 8104e815-4316-48be-ad1a-2021666f989f
         - !<reference> b9b3aff4-658d-4c76-ab3d-b479d4a722c8
