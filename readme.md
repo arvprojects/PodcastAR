@@ -10,7 +10,7 @@ This is a v1 product meant to show the usefulness of a platform like this. We wa
 
 If you want to use the app. Please sign up and link your spotify at tinyurl.com/PodcastAR99. Once you have an account, make sure your spotify app is open and that you have interacted with it (played something) within the previous 30 seconds. This registers your device as active with the spotify api so we can start polling the playback state once you select a podcast. Once you've done that, all that's left is to select a podcast and listen!
 
-NOTE: you must have spotify premium to use this app.
+NOTE: you must have spotify premium to use this app due to the spotify apis only working with premium users.
 
 NOTE: There is a known bug with the spectacles web sockets where the glasses will crash when a websocket is closed. This means if the spectacles dont receive a message in the span of say a minute after the connection is opened the app will crash. We are working to figure out a solution to this. 
 
