@@ -8,7 +8,7 @@ A podcaster who owns a podcast that is available on spotify can create a podcast
 
 This is a v1 product meant to show the usefulness of a platform like this. We want to expand and create a UI for podcasters to add and modify different types of media besides just images to their podcast in an effort to give podcasters more ways to be closer to their listeners.
 
-If you want to use the app. Please sign up and link your spotify at tinyurl.com/PodcastAR99
+If you want to use the app. Please sign up and link your spotify at tinyurl.com/PodcastAR99. Once you have an account, make sure your spotify app is open and that you have interacted with it (played something) within the previous 30 seconds. This registers your device as active with the spotify api so we can start polling the playback state once you select a podcast. Once you've done that, all that's left is to select a podcast and listen!
 
 NOTE: you must have spotify premium to use this app.
 
