@@ -42,8 +42,10 @@ export class SpectaclesBackendClient extends BaseScriptComponent {
     this.websocket.onMessage((event) => {
       this.receiveMessage(event);
     });
-
-    this.websocket.onClose(() => {
+        
+      //server code should stop the polling when web socket closed
+        //but leaving this here for redundancy
+      this.websocket.onClose(() => {
       this.triggerListeningToPodcast(false);
     });
 
