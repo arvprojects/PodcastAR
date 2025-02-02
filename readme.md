@@ -1,7 +1,7 @@
 https://www.youtube.com/watch?v=vIh-0bSsjds [Video demo]
 
-Podcast AR is a platform that helps podcasters become closer to their users through augmented reality experiences.
-
+**Podcast AR is a platform that helps podcasters become closer to their users through augmented reality experiences.
+**
 
 A podcaster who owns a podcast that is available on spotify can create a podcast in our system and attach certain media (images) to certain timestamps within the podcast. Users will then be able to open our app, select a podcast, and as they listen, images will show up on the screen at the specified timestamps. The user also has the ability to control spotify (play, pause, skip). You can also capture a moment when listening to a podcast, this will save the current timestamp in your user profile. 
 
