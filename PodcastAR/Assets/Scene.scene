@@ -5260,8 +5260,8 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: -10.869967, y: 7.927469, z: 37.524078}
-    rotation: {x: 0.000000, y: -10.000001, z: 0.000000}
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
