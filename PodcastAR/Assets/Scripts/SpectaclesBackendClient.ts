@@ -24,7 +24,9 @@ export class SpectaclesBackendClient extends BaseScriptComponent {
   onAwake() {
         
         this.createEvent("TurnOffEvent").bind(()=>{
-            if(this.username){ //if the podcast has already been triggered
+            
+            //if the podcast has already been triggered
+            if(this.username){ 
                 this.triggerListeningToPodcast(false)
             }
         })

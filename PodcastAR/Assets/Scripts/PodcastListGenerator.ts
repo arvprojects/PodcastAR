@@ -7,11 +7,6 @@ import { ContainerFrame } from '../SpectaclesInteractionKit/Components/UI/Contai
 import NativeLogger from "SpectaclesInteractionKit/Utils/NativeLogger";
 
 const log = new NativeLogger("MyNativeLogger");
-let user ;
-global.userContextSystem.requestUsername(function(username){
-    user=username
-  print(username)
-})
 
 //hardcod podcast list, using api made the scroll view not work
 let podcasts = new Map<string, string>([
@@ -92,6 +87,8 @@ export class GridContentCreator extends BaseScriptComponent {
   
 
     onStateChangedCallback = (podcast) => {
+        let user = globalThis.snapUsername;
+
       this.containerFrame.sceneObject.enabled=false;
 
    this.specs.initializeWebSocketConnection(user,podcasts.get(podcast));

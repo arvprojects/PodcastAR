@@ -1,0 +1,41 @@
+- !<AssetImportMetadata/191657db-95d0-42be-ad70-33cd09ae828e>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> fd94d324-0f6d-447a-8a9c-9a22ab0dcf67
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> fd94d324-0f6d-447a-8a9c-9a22ab0dcf67
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 3675050a-393f-49ef-8dfe-9cd51b82cac7
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/fd3292e2-abbe-4f22-a1a3-4dec9fce2a6a>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/3675050a-393f-49ef-8dfe-9cd51b82cac7>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    podcastListContainer: false
+    thiscontainer: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - podcastListContainer: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      thiscontainer: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.ScriptComponent podcastListContainer
+    - // @input Component.ScriptComponent thiscontainer

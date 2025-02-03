@@ -38,8 +38,9 @@ podcastContainer : ScriptComponent;
     }
     
     stopListening(){
-        print('here')
+        print('Stopping listening')
         this.specs.triggerListeningToPodcast(false)
+        this.specs.pausePlayback()
     }
 
 

@@ -14,23 +14,23 @@ viewConfig:
     viewport: Maximized
     output: Live
     stereoOutputEye: Center
-    deviceTypeOverride: Spectacles
-  cameraType: Front
+    deviceTypeOverride: Unknown
+  cameraType: Back
 metaInfo:
   hints:
     []
   tags:
     []
-  lensName: Specs Starter
+  lensName: PodcastAR
   lensDescriptors:
-    - EXPERIMENTAL_API
+    - GEN_AI_ICON
   lensApplicability:
     - Front
     - Back
   lensClientCompatibilities:
     - Spectacles
   platformBundlesEnabled: false
-  iconHash: c47db7fea54d85805eb1897ffdb74542
+  iconHash: 03db1c9ffb5adea1de14a818f2a498d4
   videoPreviewHash: ""
   fromTemplateName: Spectacles
   fromTemplateUrl: Lens Studio 5.4.1.24123021
